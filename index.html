@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's comical...</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="comic-container">
+            <div class="blocker-container">
+                <p claas="blocker">Scroll to get started---></p>
+            </div>
+            <img class="comic-panel" src="F/F1.jpg" alt="Panel 1">
+            <img class="comic-panel" src="F/F2.jpg" alt="Panel 2">
+            <img class="comic-panel" src="F/F3.jpg" alt="Panel 3">
+            <img class="comic-panel" src="F/F4.jpg" alt="Panel 4">
+            <img class="comic-panel" src="F/F5.jpg" alt="Panel 5">
+            <img class="comic-panel" src="F/F6.jpg" alt="Panel 6">
+            <img class="comic-panel" src="F/F7.jpg" alt="Panel 7">
+
+
+            <div class="comic-panel mad-lib-panel" id="madLibPanel">
+                <img src="" alt="背景图" id="madLibBg" class="mad-lib-bg">
+                <img src="F/F8.png" alt="Panel 8" class="panel-image">
+            
+                <div class="mad-lib-input-container">
+                    <p class="comic-neue-bold-italic">
+                        Let me think... I was at the 
+                        <input type="text" id="placeInput" placeholder="dining hall / printing center / library"><br>
+                        <input type="text" id="actionInput" placeholder="drinking / cutting / coding">
+                        a
+                        <input type="text" id="objectInput" placeholder="latte / poster / website">
+                    </p>
+                </div>
+            
+                <img src="" alt="人物和物品" id="actionObjectImg" class="action-object-img">
+            </div>
+         </div>
+    </div>
+    <div id="endingScreen" class="ending-screen">
+        <img src="" id="endingImg" class="ending-img">
+        <p id="endingText" class="ending-text comic-neue-bold-italic"></p>
+    </div>
+    
+    <button id="submitButton" class="submit-button" style="display:none;">Submit</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
